@@ -1,0 +1,16 @@
+#accordion-page {
+    font-size: 15px;
+    background-color: lightslategray;
+    padding: 2rem;
+    margin: 1rem;
+    
+ }
+ .accordion-item{
+    background-color: none;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    box-shadow: .5rem 2px .5rem darkblue;
+    display: relative;
+    align-items: center;
+}

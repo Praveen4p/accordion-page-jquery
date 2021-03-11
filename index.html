@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+   <meta charset="utf-8">
+   <title>jQuery Accordion page </title>
+   <link href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+   <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+   <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+   <link rel="stylesheet" href="style.css">
+
+   <script>
+      $(function () {
+         $("#accordion-page").accordion({
+            disabled: false
+         });
+         $("input").each(function () {
+            $(this).change(function () {
+               if ($(this).attr("id") == "disableaccordion") {
+                  $("#accordion-page").accordion("option", "disabled", true);
+               } else {
+                  $("#accordion-page").accordion("option", "disabled", false);
+               }
+            });
+         });
+      });
+   </script>
+</head>
+
+<body>
+   <div id="accordion-page">
+      <h1>BrahMos</h1>
+      <div class="accordion-item">
+         <p>
+            The BrahMos (designated PJ-10) is a medium-range ramjet supersonic cruise missile that can be launched
+            from submarine, ships, aircraft, or land. It is the fastest supersonic cruise missile in the world. It
+            is a joint venture between the Russian Federation's NPO Mashinostroyeniya and India's Defence Research and
+            Development Organisation (DRDO), who together have formed BrahMos Aerospace. It is based on the Russian
+            P-800 Oniks cruise missile and other similar sea-skimming Russian cruise missile technology. The name
+            BrahMos is a portmanteau formed from the names of two rivers, the Brahmaputra of India and the Moskva of
+            Russia.
+            It is the world's fastest anti-ship cruise missile in operation. The land-launched and
+            ship-launched versions are already in service.An air-launched variant of BrahMos appeared in 2012 and
+            entered service in 2019. A hypersonic version of the missile, BrahMos-II, is also presently under
+            development with a speed of Mach 7–8 to boost aerial fast strike capability. It was expected to be ready for
+            testing by 2020
+            <br>
+            <a style="color: blue;" href="https://en.wikipedia.org/wiki/BrahMos"> See also--</a>
+         </p>
+      </div>
+      <h3>Prithvi</h3>
+      <div class="accordion-item">
+         <p>
+            Prithvi (Sanskrit: pṛthvī "Earth") is a tactical surface-to-surface short-range ballistic missile (SRBM)
+            developed by Defence Research and Development Organisation (DRDO) of India under the Integrated Guided
+            Missile Development Program (IGMDP). It is deployed by India's Strategic Forces Command.
+            The Government of India launched the Integrated Guided Missile Development Program in 1983 to achieve
+            self-sufficiency in the development and production of wide range of ballistic missiles, surface-to-air
+            missiles etc. Prithvi was the first missile to be developed under the program. DRDO attempted to build a
+            surface-to-air missile under Project Devil.Variants make use of either liquid or both liquid and solid
+            fuels. Developed as a battlefield missile, it could carry a nuclear warhead in its role as a tactical
+            nuclear weapon.
+         <h4>Variants</h4>
+         <ol>
+            <li> Prithvi I (SS-150) – Army version (150 km (93 mi) range with a payload of 1,000 kg (2,200 lb))</li>
+            <li>Prithvi II (SS-250) – Air Force version (350 km (220 mi)[6] range with a payload of 500 kg (1,100 lb))
+            </li>
+            <li>Prithvi III (SS-350) – Naval version (350 km (220 mi) range with a payload of 1,000 kg (2,200 lb))</li>
+         </ol>
+         </p>
+      </div>
+      <h3>Agani</h3>
+      <div class="accordion-item">
+         <p>
+            Agni-V is an Indian nuclear-capable ballistic missile developed by the Defence Research
+            and Development Organisation. The missile is believed to have a range of around 5,000 to 8,000 km. Even
+            though it's tested range of 5,000 km only qualifies it as an intermediate range missile, it's actual range
+            may be greater; Indian officials have described it as an intercontinental missile. It is a three-stage,
+            road-mobile and solid-fueled missile which is transported by a truck and launched via a canister. Its first
+            flight was conducted in 2012.
+         </p>
+         Related development
+         <ul>
+            <li><a style="color: red;" href="https://en.wikipedia.org/wiki/Agni-III">Agani-III</a></li>
+            <li><a style="color: red;" href="https://en.wikipedia.org/wiki/Agni-III">Agani-VI</a></li>
+            <li><a style="color: red;" href="https://en.wikipedia.org/wiki/K_Missile_family">K Series missiles</a></li>
+         </ul>
+      </div>
+   </div>
+   <div style="margin-top:30px">
+      <input type="radio" name="disable" id="disableaccordion" value="disable">Disable accordion
+      <input type="radio" name="disable" id="enableaccordion" checked value="enable">Enable accordion
+   </div>
+</body>
+
+</html>
